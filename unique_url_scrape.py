@@ -28,7 +28,7 @@ def scrape_site(url: str):
         add it with {'url' : url... and 'data' : html data...}
         and Return the content
     """
-    data1 = checker(url)
+    data1 = get_data_from_database(url)
     if data1 != None:
         return data1
     else:
